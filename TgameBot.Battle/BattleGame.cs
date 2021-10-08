@@ -29,7 +29,7 @@ namespace TgameBot.Battle
 
             battleResult.AppendLine(" --- Fight started! --- ");
 
-            while (!(warriors.Where(x => x.Helath <= 0).Count() == warriors.Count() - 1))
+            while (!(warriors.Where(x => x.Helath > 0).Count() == 1))
                 RandomizeAttacks(warriors);
 
             ShowWarriorsInformation(warriors, true);
