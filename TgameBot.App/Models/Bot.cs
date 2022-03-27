@@ -26,7 +26,7 @@ namespace TgameBot.Models
             commands.Add(new OnlineCommand());
             commands.Add(new HelpCommand());
 
-            botClient = new TelegramBotClient("1125184268:AAFquhBixoh3eZGUpoy51dxwX3j6fLo-3iE");
+            botClient = new TelegramBotClient("token");
 
             return botClient; 
         }
